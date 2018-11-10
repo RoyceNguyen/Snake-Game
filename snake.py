@@ -122,6 +122,9 @@ while True:
         body_part.penup()
         body.append(body_part)
 
+        #shorten delay
+        delay -= 0.001
+
         #Increase the score
         score += 10
 
