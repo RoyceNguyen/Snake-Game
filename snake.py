@@ -22,7 +22,9 @@ head.penup()
 head.goto(0,0) #start at mid of screen
 head.direction = "stop"
 
-
+# Score
+score = 0
+high_score = 0
 
 # creating fruit
 food = turtle.Turtle()
@@ -114,6 +116,12 @@ while True:
         body_part.penup()
         body.append(body_part)
 
+        #Increase the score
+        score += 10
+
+        if score > high_score:
+            high_score = score
+        pen.write("Score : {}    High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
     # move the last segment first in reverse order
     for i in range(len(body) -1, 0, -1):
         x = body[i-1].xcor()
