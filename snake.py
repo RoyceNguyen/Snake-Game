@@ -71,7 +71,21 @@ window.onkeypress(right, "d")
 while True:
     window.update()
 
-    #check for collision with food
+    #check for collision with border
+    if head.xcor()>290 or head.xcor()<-290 or head.ycor()>290 or head.ycor()<-290:
+        time.sleep(1)
+        head.goto(0, 0)
+        head.direction = "stop"
+
+        #hide the body parts
+        for bod in body:
+            bod.goto(1000,1000)
+
+
+
+        #clear the body list
+        body.clear()
+    # check for collision with food
     if head.distance(food) < 20:
         #move food to random place
         x = random.randint(-290,290)
