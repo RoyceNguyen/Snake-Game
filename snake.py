@@ -16,7 +16,7 @@ window.tracer(0) #turns off the screen updates
 # creating snake head
 head = turtle.Turtle()
 head.speed(0)
-head.shape("circle")
+head.shape("square")
 head.color("blue")
 head.penup()
 head.goto(0,0) #start at mid of screen
@@ -27,8 +27,8 @@ head.direction = "stop"
 # creating fruit
 food = turtle.Turtle()
 food.speed(0)
-food.shape("square")
-food.color("white")
+food.shape("circle")
+food.color("red")
 food.penup()
 food.goto(0,100)
 # creating body
@@ -81,12 +81,26 @@ while True:
         #add a body part
         body_part = turtle.Turtle()
         body_part.speed(0)
-        body_part.shape("circle")
-        body_part.color("gray")
+        body_part.shape("square")
+        body_part.color("yellow")
         body_part.penup()
         body.append(body_part)
 
+    # move the last segment first in reverse order
+    for i in range(len(body) -1, 0, -1):
+        x = body[i-1].xcor()
+        y = body[i-1].ycor()
+        body[i].goto(x, y)
+    # move segment 0 to where the head is
+    if len(body) > 0:
+        x = head.xcor()
+        y = head.ycor()
+        body[0].goto(x, y)
+
+
+
     move()
+
     time.sleep(delay)
 
 
