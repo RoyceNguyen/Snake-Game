@@ -36,13 +36,17 @@ body = []
 
 # Functions
 def up():
-    head.direction = "up"
+    if head.direction != "down":
+        head.direction = "up"
 def down():
-    head.direction = "down"
+    if head.direction != "up":
+         head.direction = "down"
 def left():
-    head.direction = "left"
+    if head.direction != "right":
+        head.direction = "left"
 def right():
-    head.direction = "right"
+    if head.direction != "left":
+        head.direction = "right"
 def move():
     if head.direction == "up":
         y = head.ycor()
