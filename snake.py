@@ -121,6 +121,8 @@ while True:
 
         if score > high_score:
             high_score = score
+
+        pen.clear()
         pen.write("Score : {}    High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
     # move the last segment first in reverse order
     for i in range(len(body) -1, 0, -1):
