@@ -31,6 +31,8 @@ food.shape("square")
 food.color("white")
 food.penup()
 food.goto(0,100)
+# creating body
+body = []
 
 # Functions
 def up():
@@ -69,11 +71,20 @@ window.onkeypress(right, "d")
 while True:
     window.update()
 
+    #check for collision with food
     if head.distance(food) < 20:
         #move food to random place
         x = random.randint(-290,290)
         y = random.randint(-290,290)
         food.goto(x, y)
+
+        #add a body part
+        body_part = turtle.Turtle()
+        body_part.speed(0)
+        body_part.shape("circle")
+        body_part.color("gray")
+        body_part.penup()
+        body.append(body_part)
 
     move()
     time.sleep(delay)
