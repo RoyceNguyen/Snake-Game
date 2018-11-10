@@ -33,14 +33,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2274" />
-          <entry key="txt" value="866" />
+          <entry key="py" value="2367" />
+          <entry key="txt" value="988" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="888" />
-          <entry key="Python" value="2252" />
+          <entry key="PLAIN_TEXT" value="1010" />
+          <entry key="Python" value="2345" />
         </counts>
       </usages-collector>
     </session>
@@ -50,12 +50,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+            <state relative-caret-position="445">
+              <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
               <folding>
                 <element signature="e#3#16#0" expanded="true" />
-                <marker date="1541829744626" expanded="true" signature="865:1129" ph="..." />
-                <marker date="1541829744626" expanded="true" signature="1140:1620" ph="..." />
+                <marker date="1541830227162" expanded="true" signature="865:1129" ph="..." />
+                <marker date="1541830227162" expanded="true" signature="1140:1620" ph="..." />
               </folding>
             </state>
           </provider>
@@ -243,7 +243,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541829662609</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="make it so that when you crash into border score would reset">
+      <created>1541829772291</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1541829772291</updated>
+    </task>
+    <task id="LOCAL-00015" summary="make it so that when you crash into your body score would reset">
+      <created>1541829927896</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541829927896</updated>
+    </task>
+    <task id="LOCAL-00016" summary="increase the speed of the snake as you eat more food">
+      <created>1541830063318</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541830063318</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -295,7 +316,10 @@
     <MESSAGE value="creating a score board on top" />
     <MESSAGE value="defining when scores goes up and setting up high scores" />
     <MESSAGE value="fixed issues where scoreboard overlapped each other" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed issues where scoreboard overlapped each other" />
+    <MESSAGE value="make it so that when you crash into border score would reset" />
+    <MESSAGE value="make it so that when you crash into your body score would reset" />
+    <MESSAGE value="increase the speed of the snake as you eat more food" />
+    <option name="LAST_COMMIT_MESSAGE" value="increase the speed of the snake as you eat more food" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/game.py" />
@@ -305,12 +329,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="105" column="17" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        <state relative-caret-position="445">
+          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
           <folding>
             <element signature="e#3#16#0" expanded="true" />
-            <marker date="1541829744626" expanded="true" signature="865:1129" ph="..." />
-            <marker date="1541829744626" expanded="true" signature="1140:1620" ph="..." />
+            <marker date="1541830227162" expanded="true" signature="865:1129" ph="..." />
+            <marker date="1541830227162" expanded="true" signature="1140:1620" ph="..." />
           </folding>
         </state>
       </provider>
