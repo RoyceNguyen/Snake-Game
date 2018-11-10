@@ -16,7 +16,7 @@ window.tracer(0) #turns off the screen updates
 # creating snake head
 head = turtle.Turtle()
 head.speed(0)
-head.shape("square")
+head.shape("circle")
 head.color("blue")
 head.penup()
 head.goto(0,0) #start at mid of screen
@@ -95,7 +95,7 @@ while True:
 
         #hide the body parts
         for bod in body:
-            bod.goto(1000,1000)
+            bod.hideturtle()
 
 
 
@@ -119,7 +119,7 @@ while True:
         #add a body part
         body_part = turtle.Turtle()
         body_part.speed(0)
-        body_part.shape("square")
+        body_part.shape("circle")
         body_part.color("yellow")
         body_part.penup()
         body.append(body_part)
@@ -159,7 +159,7 @@ while True:
 
             # hide the body parts
             for bod in body:
-                bod.goto(1000, 1000)
+                bod.hideturtle()
 
             # clear the body list
             body.clear()
