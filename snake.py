@@ -115,6 +115,21 @@ while True:
 
     move()
 
+    #check for body collision
+    for bod in body:
+        if bod.distance(head) < 20:
+            time.sleep(1)
+            head.goto(0,0)
+            head.direction = "stop"
+
+            # hide the body parts
+            for bod in body:
+                bod.goto(1000, 1000)
+
+            # clear the body list
+            body.clear()
+
+
     time.sleep(delay)
 
 
