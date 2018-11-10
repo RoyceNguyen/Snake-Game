@@ -23,10 +23,30 @@ head.goto(0,0) #start at mid of screen
 head.direction = "up"
 
 # Functions
+def up():
+    head.direction = "up"
+def down():
+    head.direction = "down"
+def left():
+    head.direction = "left"
+def right():
+    head.direction = "right"
 def move():
     if head.direction == "up":
         y = head.ycor()
         head.sety(y + 20)
+    if head.direction == "down":
+        y = head.ycor()
+        head.sety(y - 20)
+    if head.direction == "left":
+        x = head.xcor()
+        head.setx(x - 20)
+    if head.direction == "right":
+        x = head.xcor()
+        head.setx(x + 20)
+
+
+
 # main game loop
 while True:
     window.update()
